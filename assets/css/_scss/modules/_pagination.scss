@@ -14,6 +14,8 @@
     text-decoration: none;
     background-color: $color-navy;
     color: $color-navy;
+    display: inline-block;
+    margin-bottom: 1.5em;
 
     &.prev,
     &.next {
@@ -44,6 +46,7 @@
     height: var(--rdim);
     width: var(--rdim);
     transition: transform 250ms linear;
+    display: inline;
 
     &::before,
     &::after {
@@ -51,7 +54,7 @@
       position: absolute;
       height: var(--rd);
       width: var(--rdim);
-      left: -10px;
+      left: -5px;
       background: var(--pm);
       -webkit-transition: inherit;
       transition: inherit;

@@ -1286,6 +1286,8 @@ input, textarea {
   text-decoration: none;
   background-color: #282E89;
   color: #282E89;
+  display: inline-block;
+  margin-bottom: 1.5em;
 }
 
 .pagination .page-numbers.prev, .pagination .page-numbers.next {
@@ -1319,6 +1321,7 @@ input, textarea {
   transition: -webkit-transform 250ms linear;
   transition: transform 250ms linear;
   transition: transform 250ms linear, -webkit-transform 250ms linear;
+  display: inline;
 }
 
 .pagination .page-numbers.current::before, .pagination .page-numbers.current::after {
@@ -1326,7 +1329,7 @@ input, textarea {
   position: absolute;
   height: var(--rd);
   width: var(--rdim);
-  left: -10px;
+  left: -5px;
   background: var(--pm);
   -webkit-transition: inherit;
   transition: inherit;
