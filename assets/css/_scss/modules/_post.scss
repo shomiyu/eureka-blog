@@ -101,22 +101,6 @@
 
   a {
     display: inline-block;
-    padding: .25em .5em;
-    position: relative;
-    padding-left: 1.5em;
-
-    &::before {
-      content: '';
-      display: inline-block;
-      width: .5em;
-      height: .5em;
-      border-top: 1px solid $color-black;
-      border-right: 1px solid $color-black;
-      transform: rotate(45deg);
-      position: absolute;
-      top: .75em;
-      left: 0;
-    }
 
     &:hover {
       color: $color-yellow;

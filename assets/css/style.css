@@ -849,24 +849,6 @@ input, textarea {
 
 .post-content a {
   display: inline-block;
-  padding: .25em .5em;
-  position: relative;
-  padding-left: 1.5em;
-}
-
-.post-content a::before {
-  content: '';
-  display: inline-block;
-  width: .5em;
-  height: .5em;
-  border-top: 1px solid #0D0D0D;
-  border-right: 1px solid #0D0D0D;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-  position: absolute;
-  top: .75em;
-  left: 0;
 }
 
 .post-content a:hover {
