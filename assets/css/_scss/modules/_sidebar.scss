@@ -1,0 +1,142 @@
+aside + aside {
+  margin-top: 2em;
+}
+
+.search {
+  position: relative;
+
+  &__entry {
+    background-color: $color-gray;
+    padding: .5em 1em;
+    width: 100%;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+    }
+  }
+
+  &__submit {
+    width: 2.5em;
+    height: 100%;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjYiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNiAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTEiIGN5PSIxMSIgcj0iOS41IiBzdHJva2U9IiMwRDBEMEQiIHN0cm9rZS13aWR0aD0iMyIvPgo8cGF0aCBkPSJNMTkgMTlMMjUgMjQiIHN0cm9rZT0iIzBEMEQwRCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+Cg==);
+    background-color: $color-yellow;
+    background-size: 50%;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+    }
+  }
+}
+
+.widget {
+  &__title {
+    font-family: 'Ubuntu';
+    background-color: $color-yellow;
+    padding: .25em .5em;
+    font-size: fz(18);
+    margin-bottom: .5em;
+  }
+}
+
+.widget_categories {
+  a {
+    text-decoration: none;
+    display: block;
+    padding: .25em .5em;
+    position: relative;
+    padding-left: 1.5em!important;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: .5em;
+      height: .5em;
+      border-top: 1px solid $color-black;
+      border-right: 1px solid $color-black;
+      transform: rotate(45deg);
+      transition: .3s all ease-in-out;
+      position: absolute;
+      top: .75em;
+      left: 0;
+    }
+  }
+}
+
+.toc_widget {
+  background-color: $color-gray;
+  padding: .25em 1em 1em;
+
+  .widget__title {
+    background-color: transparent;
+    text-align: center;
+  }
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0;
+  }
+
+  .toc_widget_list {
+    counter-reset: li;
+
+    > li {
+      position: relative;
+      padding-left: 2.25em;
+      margin-bottom: .5em;
+      margin-left: .5em;
+      line-height: 1.3em;
+      font-size: 0.9em;
+
+      &::after {
+        counter-increment: li;
+        content: "0" counter(li) " |";
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: none;
+        font-size: fz(16);
+        letter-spacing: -1px;
+        color: $color-yellow;
+      }
+    }
+  }
+}
+
+.side-follow {
+  margin-top: 2em;
+}
+
+@include lap {
+  .widget_categories {
+    a {
+      &:hover {
+        &::before {
+          transform: translateX(4px) rotate(45deg);
+        }
+      }
+    }
+  }
+
+  .side-follow {
+    $headerHeight: em(16, 52);
+    position: sticky;
+    top: calc(#{$headerHeight} + 3em);
+    margin-top: 1.5em;
+  }
+
+  .toc_widget {
+    a {
+      &:hover {
+        text-decoration: none;
+        color: $color-yellow;
+      }
+    }
+  }
+}

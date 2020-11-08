@@ -1,0 +1,112 @@
+.footer {
+  margin-top: 3em;
+
+  .widget + .widget {
+    margin-top: 1.5em;
+  }
+}
+
+.footer-upper {
+  background-color: $color-gray;
+  padding: 3.5em 0 3em;
+
+  .column {
+    margin-top: 0;
+  }
+
+  .search__entry {
+    background-color: $color-white;
+  }
+}
+
+// ウィジェット全般
+.footer-widget {
+  &__title {
+    font-family: 'Ubuntu';
+    background-color: $color-yellow;
+    font-size: fz(18);
+    padding: .25em .75em;
+    margin-bottom: 1.5em;
+  }
+}
+
+.footer-widget + .footer-widget {
+  margin: 1.5em 0 0 0;
+}
+
+// フッタープロフィール
+.profile {
+  &__image {
+    width: 35%;
+    margin: 0 auto 1em;
+  }
+
+  &__text {
+    font-size: fz(14);
+  }
+}
+
+// フッタータグクラウド
+.widget_tag_cloud {
+  a {
+    display: inline-block;
+    font-size: fz(14)!important;
+    text-decoration: none;
+    position: relative;
+    padding-left: 1.5em;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 15px;
+      padding-top: 15px;
+      background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDYiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA0NiA2MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEgMVY1OC43TDIzLjEgNDUuM0w0NSA1OC43VjFIMVoiIGZpbGw9IiMyODJFODkiLz4KPHBhdGggZD0iTTEgMVY1OC43TDIzLjEgNDUuM0w0NSA1OC43VjFIMVoiIGZpbGw9IiMyODJFODkiLz4KPHBhdGggZD0iTTEgMVY1OC43TDIzLjEgNDUuM0w0NSA1OC43VjFIMVoiIHN0cm9rZT0iIzI4MkU4OSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+// SNSアカウント
+.sns-accounts {
+  margin-top: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  li {
+    padding: 0 .5em;
+  }
+
+  a {
+    display: inline-block;
+    width: 30px;
+    box-sizing: content-box;
+  }
+}
+
+.footer-bottom {
+  text-align: center;
+  color: $color-text-secondary;
+  padding: 1.5em 0 .5em;
+  background-color: $color-footer-background;
+}
+
+.footer-logo {
+  margin-bottom: .25em;
+}
+
+@include lap {
+  .footer {
+    margin-top: 6em;
+  }
+
+  .footer-widget + .footer-widget {
+    margin: 0 0 0 2.5em;
+  }
+}

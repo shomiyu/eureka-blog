@@ -1,0 +1,26 @@
+// ----------------------------
+//  mixin (mobile to pc)
+// ----------------------------
+
+$tab: 768px;
+$lap: 1024px;
+$desk: 1280px;
+
+// タブレット以上
+@mixin tab {
+  @media screen and (min-width: ($tab)) {
+    @content;
+  }
+}
+// ノートパソコン以上
+@mixin lap {
+  @media screen and (min-width: ($lap)) {
+    @content;
+  }
+}
+// PC以上
+@mixin desk {
+  @media screen and (min-width: ($desk)) {
+    @content;
+  }
+}

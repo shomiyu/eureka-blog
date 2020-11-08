@@ -1,0 +1,80 @@
+.pagination {
+  margin-top: 4em;
+  --ddim: 13px;
+  --rd: 18px;
+	--rdim: calc(var(--rd)*2);
+	--pm: #FFCF00;
+
+  .nav-links {
+    text-align: center;
+  }
+
+  .page-numbers {
+    padding: 0 .45em;
+    text-decoration: none;
+    background-color: $color-navy;
+    color: $color-navy;
+
+    &.prev,
+    &.next {
+      font-family: 'Ubuntu';
+      background-color: $color-white;
+      color: $color-navy;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &.current {
+      background-color: $color-white;
+      color: $color-white;
+    }
+
+    &:not(.next):not(.prev) {
+      font-size: fz(12);
+    }
+  }
+
+  .page-numbers + .page-numbers {
+    margin-left: 1.5em;
+  }
+
+  .page-numbers.current {
+    position: relative;
+    height: var(--rdim);
+    width: var(--rdim);
+    transition: transform 250ms linear;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      height: var(--rd);
+      width: var(--rdim);
+      left: -10px;
+      background: var(--pm);
+      -webkit-transition: inherit;
+      transition: inherit;
+    }
+
+    &::before {
+      top: -10px;
+      border-top-left-radius: var(--rdim);
+      border-top-right-radius: var(--rdim);
+      -webkit-transform-origin: bottom center;
+      transform-origin: bottom center;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+
+    &::after {
+      bottom: -9px;
+      border-bottom-left-radius: var(--rdim);
+      border-bottom-right-radius: var(--rdim);
+      -webkit-transform-origin: top center;
+      transform-origin: top center;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap');
+
+.screen-reader-text {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.page-main-title {
+  text-align: center;
+  margin-top: 1em;
+  font-size: fz(24);
+}
+
+@include lap {
+  .column {
+    display: flex;
+    justify-content: space-between;
+    margin-top: em(16, 80);
+
+    &.-col-3 {
+
+      > * {
+        width: calc(100% / 3);
+      }
+    }
+  }
+}
