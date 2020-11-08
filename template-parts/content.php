@@ -3,6 +3,7 @@
     <article class="card-item__inner">
       <div class="card-item__body">
         <h2 class="card-item__title"><?php the_title(); ?></h2>
+        <?php echo do_shortcode("[wp_ulike]"); ?>
         <p class="card-item__text"><?php the_excerpt(); ?></p>
         <?php
         $posttags = get_the_tags();

@@ -18,6 +18,7 @@
           <time datetime="<?php the_modified_date( DATE_W3C ); ?>"><?php the_modified_date( get_option( 'date_format' ) ); ?></time>
         </p>
       </div>
+      <?php echo do_shortcode("[wp_ulike]"); ?>
     </div>
     <div class="post-hero__thumbnail">
       <?php if ( has_post_thumbnail()) : ?>
@@ -73,6 +74,7 @@
 
       <div class="post-content">
         <?php the_content(); ?>
+        <?php echo do_shortcode("[wp_ulike]"); ?>
       </div>
 
       <?php if( !(is_home() || is_front_page() )): ?>
