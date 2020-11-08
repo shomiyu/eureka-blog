@@ -849,24 +849,6 @@ input, textarea {
 
 .post-content a {
   display: inline-block;
-  padding: .25em .5em;
-  position: relative;
-  padding-left: 1.5em;
-}
-
-.post-content a::before {
-  content: '';
-  display: inline-block;
-  width: .5em;
-  height: .5em;
-  border-top: 1px solid #0D0D0D;
-  border-right: 1px solid #0D0D0D;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-  position: absolute;
-  top: .75em;
-  left: 0;
 }
 
 .post-content a:hover {
@@ -1304,6 +1286,8 @@ input, textarea {
   text-decoration: none;
   background-color: #282E89;
   color: #282E89;
+  display: inline-block;
+  margin-bottom: 1.5em;
 }
 
 .pagination .page-numbers.prev, .pagination .page-numbers.next {
@@ -1337,6 +1321,7 @@ input, textarea {
   transition: -webkit-transform 250ms linear;
   transition: transform 250ms linear;
   transition: transform 250ms linear, -webkit-transform 250ms linear;
+  display: inline;
 }
 
 .pagination .page-numbers.current::before, .pagination .page-numbers.current::after {
@@ -1344,7 +1329,7 @@ input, textarea {
   position: absolute;
   height: var(--rd);
   width: var(--rdim);
-  left: -10px;
+  left: -5px;
   background: var(--pm);
   -webkit-transition: inherit;
   transition: inherit;

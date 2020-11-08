@@ -9,8 +9,8 @@ jQuery(function ($) {
     }
   });
 
-  // $('.js-hoverMenu').hover(function () {
-  //   var hoverTarget = $(this).attr('data-target');
-  //   $('#' + hoverTarget).toggleClass('is-active');
-  // });
+  // 一覧のいいねボタンはクリックできないようにする
+  $(window).on('load', function () {
+    $('.home .wp_ulike_btn').attr('disabled', 'true');
+  });
 });
