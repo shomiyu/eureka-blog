@@ -994,6 +994,15 @@ input, textarea {
   padding: .5em 0.75em;
 }
 
+.post-content code {
+  padding: 2px;
+  margin: 0 4px;
+  border-radius: 2px;
+  background: #f3f4f5;
+  font-size: inherit;
+  font-family: 'Source Code Pro', monospace;
+}
+
 .post-conversation {
   margin-bottom: 2em;
 }
