@@ -234,6 +234,13 @@
     font-size: inherit;
     font-family: 'Source Code Pro', monospace;
   }
+
+  .prism {
+    code {
+      padding: 0;
+      margin: 0;
+    }
+  }
 }
 
 .post-conversation {
