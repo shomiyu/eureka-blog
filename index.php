@@ -10,13 +10,6 @@
   <div class="conttainer">
     <p class="site-copy"><?php bloginfo( 'description' ); ?></p>
   </div>
-  <!-- <div class="container">
-    <ul class="category-menu">
-      <li class="category-menu__item"><button type="button">開発</button></li>
-      <li class="category-menu__item"><button type="button">TIP</button></li>
-      <li class="category-menu__item"><button type="button">コラム</button></li>
-    </ul>
-  </div> -->
 
   <div class="container column">
     <main class="main-content">

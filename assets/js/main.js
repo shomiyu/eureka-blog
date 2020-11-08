@@ -13,9 +13,4 @@ jQuery(function ($) {
   $(window).on('load', function () {
     $('.home .wp_ulike_btn').attr('disabled', 'true');
   });
-
-  // $('.js-hoverMenu').hover(function () {
-  //   var hoverTarget = $(this).attr('data-target');
-  //   $('#' + hoverTarget).toggleClass('is-active');
-  // });
 });
