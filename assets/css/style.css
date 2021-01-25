@@ -4,6 +4,7 @@
 ====================================== */
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -772,13 +773,13 @@ input, textarea {
 
 .post-title {
   font-size: 1.5rem;
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 
 .post-date {
   font-size: 0.75rem;
   text-align: right;
-  margin-top: .75em;
+  margin-top: 0.75em;
 }
 
 .post-date__inner {
@@ -838,7 +839,7 @@ input, textarea {
   font-size: 1.5rem;
   margin: 2.08333em 0 1em;
   border-left: 5px solid;
-  padding-left: .5em;
+  padding-left: 0.5em;
 }
 
 .post-content h4 {
@@ -935,14 +936,14 @@ input, textarea {
 }
 
 .post-content ul > li:before {
-  content: '';
+  content: "";
   display: inline-block;
-  width: .5em;
-  height: .5em;
+  width: 0.5em;
+  height: 0.5em;
   background-color: #282E89;
   position: absolute;
   left: 0;
-  top: .5em;
+  top: 0.5em;
 }
 
 .post-content ul > li > a {
@@ -960,7 +961,7 @@ input, textarea {
 .post-content ol > li {
   position: relative;
   padding-left: 1.75em;
-  font-size: .9em;
+  font-size: 0.9em;
 }
 
 .post-content ol > li::after {
@@ -988,10 +989,30 @@ input, textarea {
   content: none;
 }
 
+.post-content table {
+  border-collapse: collapse;
+  border: 2px solid #282E89;
+}
+
 .post-content table th,
 .post-content table td {
+  border: 1px solid #282E89;
   line-height: 1.5;
-  padding: .5em 0.75em;
+  padding: 0.5em 0.75em;
+}
+
+.post-content table thead {
+  color: #fff;
+  background-color: #282E89;
+  font-weight: bold;
+}
+
+.post-content table thead th {
+  border: 1px solid #fff;
+}
+
+.post-content table tbody tr:nth-child(even) {
+  background-color: #f4f4f4;
 }
 
 .post-content code {
@@ -1000,7 +1021,7 @@ input, textarea {
   border-radius: 2px;
   background: #f3f4f5;
   font-size: inherit;
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
 }
 
 .post-content .prism code {
@@ -1053,13 +1074,13 @@ input, textarea {
   font-size: 0.875rem;
   width: calc(100% - 64px - 2em);
   background-color: #f4f4f4;
-  padding: .75em 1em;
+  padding: 0.75em 1em;
   border-radius: 5px;
   position: relative;
 }
 
 .post-conversation .balloon::before {
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   top: 1em;
@@ -1102,7 +1123,7 @@ input, textarea {
 }
 
 .n404 .page-main-title {
-  font-family: 'Ubuntu';
+  font-family: "Ubuntu";
   margin-bottom: 1em;
 }
 

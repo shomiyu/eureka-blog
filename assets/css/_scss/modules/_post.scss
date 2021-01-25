@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+
 .post-hero {
   display: flex;
   flex-direction: column-reverse;
@@ -8,7 +10,7 @@
   }
 
   &__thumbnail {
-    background-image: url('/wp-content/themes/eureka/assets/images/img-post-key-sp.png');
+    background-image: url("/wp-content/themes/eureka/assets/images/img-post-key-sp.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -29,13 +31,13 @@
 
 .post-title {
   font-size: fz(24);
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 
 .post-date {
   font-size: fz(12);
   text-align: right;
-  margin-top: .75em;
+  margin-top: 0.75em;
 
   &__inner {
     position: relative;
@@ -90,7 +92,7 @@
     font-size: fz(24);
     margin: em(24, 50) 0 em(24, 24);
     border-left: 5px solid;
-    padding-left: .5em;
+    padding-left: 0.5em;
   }
 
   h4 {
@@ -163,14 +165,14 @@
       padding-left: 1em;
 
       &:before {
-        content: '';
+        content: "";
         display: inline-block;
-        width: .5em;
-        height: .5em;
+        width: 0.5em;
+        height: 0.5em;
         background-color: $color-navy;
         position: absolute;
         left: 0;
-        top: .5em;
+        top: 0.5em;
       }
 
       > a {
@@ -189,7 +191,7 @@
     > li {
       position: relative;
       padding-left: 1.75em;
-      font-size: .9em;
+      font-size: 0.9em;
 
       &::after {
         counter-increment: li;
@@ -219,10 +221,32 @@
   }
 
   table {
+    border-collapse: collapse;
+    border: 2px solid $color-navy;
+
     th,
     td {
+      border: 1px solid $color-navy;
       line-height: 1.5;
-      padding: .5em 0.75em;
+      padding: 0.5em 0.75em;
+    }
+
+    thead {
+      color: $color-white;
+      background-color: $color-navy;
+      font-weight: bold;
+
+      th {
+        border: 1px solid $color-white;
+      }
+    }
+
+    tbody {
+      tr {
+        &:nth-child(even) {
+          background-color: $color-gray;
+        }
+      }
     }
   }
 
@@ -232,7 +256,7 @@
     border-radius: 2px;
     background: #f3f4f5;
     font-size: inherit;
-    font-family: 'Source Code Pro', monospace;
+    font-family: "Source Code Pro", monospace;
   }
 
   .prism {
@@ -284,12 +308,12 @@
     font-size: fz(14);
     width: calc(100% - 64px - 2em);
     background-color: $color-gray;
-    padding: .75em 1em;
+    padding: 0.75em 1em;
     border-radius: 5px;
     position: relative;
 
     &::before {
-      content: '';
+      content: "";
       display: inline-block;
       position: absolute;
       top: 1em;
@@ -335,7 +359,7 @@
 
 .n404 {
   .page-main-title {
-    font-family: 'Ubuntu';
+    font-family: "Ubuntu";
     margin-bottom: 1em;
   }
 }
@@ -369,7 +393,7 @@
     &__thumbnail {
       max-width: 720px;
       padding-top: 35%;
-      background-image: url('/wp-content/themes/eureka/assets/images/img-post-key.png');
+      background-image: url("/wp-content/themes/eureka/assets/images/img-post-key.png");
     }
 
     .tag-list {
