@@ -895,6 +895,11 @@ input, textarea {
   margin-top: 1.5em;
 }
 
+.post-content figcaption {
+  font-size: 0.875rem;
+  text-align: center;
+}
+
 .post-content blockquote {
   position: relative;
   padding: 40px 10px 10px 15px;
