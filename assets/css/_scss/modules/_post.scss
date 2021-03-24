@@ -114,15 +114,9 @@
   ol,
   figure,
   blockquote,
-  table {
-    & + p,
-    & + ul,
-    & + ol,
-    & + blockquote,
-    & + table,
-    & + figure {
-      margin-top: 1.5em;
-    }
+  table,
+  .wp-block-image {
+    margin-bottom: 1.5em;
   }
 
   figcaption {

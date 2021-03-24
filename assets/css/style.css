@@ -856,43 +856,14 @@ input, textarea {
   color: #FFCF00;
 }
 
-.post-content p + p,
-.post-content p + ul,
-.post-content p + ol,
-.post-content p + blockquote,
-.post-content p + table,
-.post-content p + figure,
-.post-content ul + p,
-.post-content ul + ul,
-.post-content ul + ol,
-.post-content ul + blockquote,
-.post-content ul + table,
-.post-content ul + figure,
-.post-content ol + p,
-.post-content ol + ul,
-.post-content ol + ol,
-.post-content ol + blockquote,
-.post-content ol + table,
-.post-content ol + figure,
-.post-content figure + p,
-.post-content figure + ul,
-.post-content figure + ol,
-.post-content figure + blockquote,
-.post-content figure + table,
-.post-content figure + figure,
-.post-content blockquote + p,
-.post-content blockquote + ul,
-.post-content blockquote + ol,
-.post-content blockquote + blockquote,
-.post-content blockquote + table,
-.post-content blockquote + figure,
-.post-content table + p,
-.post-content table + ul,
-.post-content table + ol,
-.post-content table + blockquote,
-.post-content table + table,
-.post-content table + figure {
-  margin-top: 1.5em;
+.post-content p,
+.post-content ul,
+.post-content ol,
+.post-content figure,
+.post-content blockquote,
+.post-content table,
+.post-content .wp-block-image {
+  margin-bottom: 1.5em;
 }
 
 .post-content figcaption {
