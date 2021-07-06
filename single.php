@@ -63,7 +63,7 @@
 
         <!-- 会話3 -->
         <?php if( get_field('conversation3_person') ): ?>
-        <div class="post-conversation__inner <?php echo $fieldData['conversation3_person']['value']; ?>">
+        <div class="post-conversation__inner <?php echo $fieldData['conversation3_person']; ?>">
           <p class="person"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/assets/images/<?php echo get_field('conversation3_person'); ?>.png" alt=""></p>
           <p class="balloon"><?php echo $fieldData['conversation3_conent']; ?></p>
         </div>
